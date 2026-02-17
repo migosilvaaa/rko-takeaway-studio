@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rko-primary: #1a73e8;
+  --rko-secondary: #34a853;
+  --rko-accent: #fbbc04;
+  --rko-dark: #202124;
+  --rko-light: #f8f9fa;
+}
+
+@layer base {
+  body {
+    @apply bg-rko-light text-rko-dark;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold;
+  }
+
+  h4 {
+    @apply text-xl font-semibold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-rko-primary text-white hover:bg-blue-700;
+  }
+
+  .btn-secondary {
+    @apply bg-rko-secondary text-white hover:bg-green-700;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-ai {
+    @apply bg-rko-accent text-rko-dark;
+  }
+}
